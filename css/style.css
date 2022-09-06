@@ -419,9 +419,9 @@ a.active-2 {
 	z-index: -1;
 }
 .contact-box{
-	max-width: 450px;
+	width: 650px;
 	display: grid;
-	grid-template-columns: repeat(1, 1fr);
+	grid-template-columns: repeat(1fr);
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -491,8 +491,8 @@ h2:after{
     background-color: #fff;
 }
 
-@media screen and (max-width: 858px){
+@media only screen and (max-width: 858px){
 	.contact-box{
-		grid-template-columns: 1fr;
+		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 	}
 }
